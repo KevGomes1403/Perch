@@ -8,7 +8,7 @@ module.exports = {
       try {
         const timeline = await twitter.getTimeline("44196397")
         const random = Math.floor(Math.random() * 20);
-        const tweetEmbed = twitter.tweet(timeline, i);
+        const tweetEmbed = twitter.tweet(timeline, random);
 
         message.channel.send(tweetEmbed);
       } catch (error) {
